@@ -1,0 +1,107 @@
+{
+    "doughnuts": {
+        "SugarCoated": {
+            "description": "Traditional ring doughnuts with sugar coating",
+            "detail": [
+                {
+                    "name": "Simply Choco",
+                    "description": "Milk Chocolate topped doughnut",
+                    "price": 3
+                }
+            ],
+            "image": "https://s20.postimg.org/lwr4r4tq5/menu_sugar_coated_doughman_varieties.jpg",
+            "price": {
+                        "single": 3,
+                        "Packof5": 10,
+                        "Packof10": 18
+                    }
+        },
+        "Fillings": {
+            "description": "Doughnuts with fillings just make your day full",
+            "detail": [
+                {
+                    "name": "Jammy",
+                    "description": "Doughnut infused with jam",
+                    "price": 3
+                },
+                {
+                    "name": "Choco Haven",
+                    "description": "Doughnut infused with dark chocolate cream",
+                    "price": 3
+                },
+                {
+                    "name": "White Haven",
+                    "description": "Doughnut infused with white chocolate cream",
+                    "price": 3
+                },
+                {
+                    "name": "Custard",
+                    "description": "Doughnut infused with yellow custard",
+                    "price": 3
+                }
+            ],
+            "image": "https://s20.postimg.org/722jcyk59/menu_page_doughman_filled_varieties.jpg",
+            "price": {
+                        "single": 3,
+                        "Packof5": 15,
+                        "Packof10": 27
+                    }
+        },
+        "Toppings": {
+            "description": "Doughnuts with toppings; a heavenly bliss of taste",
+            "detail": [
+                {
+                    "name": "Simply Choco",
+                    "description": "Milk Chocolate topped doughnut",
+                    "price": 3
+                },
+                {
+                    "name": "Choco'Pea",
+                    "description": "Chocolate and peanut topping",
+                    "price": 3
+                },
+                {
+                    "name": "Choco'Nut",
+                    "description": "Chocolate and coconut shavings",
+                    "price": 3
+                },
+                {
+                    "name": "Rainbow Storm",
+                    "description": "Chocolate with coloured sprinkles",
+                    "price": 3
+                },
+                {
+                    "name": "Textured Choco",
+                    "description": "Chocolate with chocolate-coloured sprinkles",
+                    "price": 3
+                },
+                {
+                    "name": "Blueberry Coconut",
+                    "description": "Blueberry sauce with coconut shavings",
+                    "price": 3
+                },
+                {
+                    "name": "Milky Way",
+                    "description": "White chocolate cream with coconut shavings",
+                    "price": 3
+                },
+                {
+                    "name": "Mango'Nut",
+                    "description": "Mango sauce with peanuts",
+                    "price": 3
+                },
+                {
+                    "name": "Banana'Nut",
+                    "description": "Banana sauce with peanuts",
+                    "price": 3
+                }
+            ],
+            "image": "https://s20.postimg.org/4m5bcurgd/menu_page_doughman_varieties.jpg",
+            "price": {
+                        "single": 3,
+                        "Packof5": 15,
+                        "Packof10": 27
+                    }
+        } 
+    }
+}
