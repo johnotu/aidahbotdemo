@@ -5,7 +5,7 @@ var path = require('path');
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
-const dialogList = ['Order Doughnuts', 'Make Bulk Orders', 'Contact Doughman Support'];
+//const dialogList = ['Order Doughnuts', 'Make Bulk Orders', 'Contact Doughman Support'];
 
 var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure.BotServiceConnector({
     appId: process.env['MicrosoftAppId'],
@@ -33,7 +33,7 @@ bot.dialog('/', [
     },
     (session) => {
         session.sendTyping();
-        builder.Prompts.choice(session, 'What would you like to do?', dialogList);
+        builder.Prompts.choice(session, 'What would you like to do?', ['Order Doughnuts', 'Make Bulk Orders', 'Contact Doughman Support']);
     },
     (session, results) => {
         var answer = results.response.entity;
