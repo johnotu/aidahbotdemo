@@ -28,9 +28,13 @@ bot.dialog('/', [
             session.userData.firstName = session.message.user.name.split(' ')[0];
         }
         session.sendTyping();
-        session.send("Hello %s! Welcome to Doughman. Here you'll find a flavour for every occassion.", session.userData.firstName);
-        next();
-    },
+        session.send("Hello %s! Welcome to Doughman Foods. We have a flavour for every occassion.", session.userData.firstName);
+        session.sendTyping();
+        session.beginDialog('/general');
+    }
+]);
+
+bot.dialog('/general', [
     (session) => {
         session.sendTyping();
         builder.Prompts.choice(session, 'What would you like to do?', "Order Doughnuts|Make Bulk Orders|Contact Support");
@@ -44,11 +48,9 @@ bot.dialog('/', [
             case  "Make Bulk Orders":
                 session.beginDialog('/bulkOrder');
                 break;
-            case "Contact Doughman Support":
+            case "Contact Support":
                 session.beginDialog('/doughmanSupport');
                 break;
-            // default:
-            //     session.beginDialog('/intents');
         }
     }
 ]);
