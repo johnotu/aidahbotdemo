@@ -33,7 +33,7 @@ bot.dialog('/', [
     },
     (session) => {
         session.sendTyping();
-        builder.Prompts.choice(session, 'What would you like to do?', "Order Doughnuts|Make Bulk Orders|Contact Doughman Support");
+        builder.Prompts.choice(session, 'What would you like to do?', "Order Doughnuts|Make Bulk Orders|Contact Support");
     },
     (session, results) => {
         var answer = results.response.entity;
