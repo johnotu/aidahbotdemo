@@ -5,7 +5,7 @@ var path = require('path');
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
-const dialogList = ["Order Doughnuts", "Make Bulk Orders", "Contact Doughman Support"];
+const dialogList = ['Order Doughnuts', 'Make Bulk Orders', 'Contact Doughman Support'];
 
 var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure.BotServiceConnector({
     appId: process.env['MicrosoftAppId'],
