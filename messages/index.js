@@ -30,6 +30,10 @@ bot.dialog('/', [
         session.sendTyping();
         session.send("Hello %s! Welcome to Doughman Foods. We have a flavour for every occassion.", session.userData.firstName);
         session.sendTyping();
+
+        //initial values
+        session.userData.mixQty = '0';
+
         session.beginDialog('/general');
     }
 ]);
@@ -58,6 +62,8 @@ bot.dialog('/general', [
 bot.dialog('/orderDoughnuts', require('./dialogs/orderDoughnuts'));
 bot.dialog('/bulkOrder', require('./dialogs/bulkOrder'));
 bot.dialog('/doughmanSupport', require('./dialogs/doughmanSupport'));
+bot.dialog('/doughnutSingle', require('./dialogs/sub/doughnutSingle'));
+bot.dialog('/doughnutMix', require('./dialogs/sub/doughnutMix'));
 
 if (useEmulator) {
     var restify = require('restify');
