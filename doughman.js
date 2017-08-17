@@ -20,11 +20,13 @@ bot.dialog('/', [
   }
 ]);
 
+app.use(express.static('public'));
+
 app.post('/api/messages', connector.listen());
 
-app.get('/', (req, res) => {
-  res.send('Doughman standalone');
-})
+// app.get('/', (req, res) => {
+//   res.send('Doughman standalone');
+// })
 
 app.listen(port, () => {
   console.log(`DoughmanBot is listening on port ${port}`);
