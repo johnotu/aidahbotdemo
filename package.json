@@ -24,7 +24,9 @@
   "homepage": "https://github.com/johnotu/aidahbotdemo#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
     "botbuilder": "^3.9.0",
+    "cors": "^2.8.4",
     "express": "^4.15.4",
     "mongoose": "^4.11.7"
   },

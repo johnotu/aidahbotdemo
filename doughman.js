@@ -2,10 +2,13 @@
 require('dotenv').config();
 
 const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const builder = require('botbuilder');
 const mongoose = require('mongoose');
 const config = require('./config/database');
-const dashboard = require('./routes/dashboard');
+
+const product = require('./routes/product');
 
 const port = process.env.PORT || 3978;
 
@@ -37,8 +40,11 @@ bot.dialog('/', [
   }
 ]);
 
+app.use(cors());
+app.use(bodyParser.json());
+
 app.use(express.static('public'));
-app.use('/dashboard', dashboard);
+app.use('/product', product);
 
 app.post('/api/messages', connector.listen());
 
