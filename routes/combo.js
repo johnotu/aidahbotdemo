@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const Product = require('../models/product'); 
+const Combo = require('../models/combo'); 
 
 router.get('/', (req, res) => {
-	Product.getProducts((err, products) => {
+	Combo.getCombos((err, combos) => {
 		if (err) {
 			return res.json({
 				success: false,
@@ -13,20 +13,21 @@ router.get('/', (req, res) => {
 		}
 		return res.json({
 			success: true,
-			products: products
+			combos: combos
 		});
 	});
 });
 
 router.post('/', (req, res) => {
-	let newProduct = new Product({
+	let newCombo = new Combo({
 		name: req.body.name,
-		description: req.body.description,
-		image_link: req.body.image_link,
-		price: req.body.price
+		qty: req.body.qty,
+		category: req.body.category,
+		price: req.body.price,
+		status: req.body.status
 	});
 
-	Product.addProduct(newProduct, (err, product) => {
+	Combo.addCombo(newCombo, (err, combo) => {
 		if (err) {
 			return res.json({
 				success: false,
@@ -35,7 +36,7 @@ router.post('/', (req, res) => {
 		}
 		res.json({
 			success: true,
-			product: product
+			combo: combo
 		});
 	});
 });

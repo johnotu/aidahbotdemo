@@ -1,10 +1,10 @@
 $(() => {
 	showAlert('info', 'Getting products ...');
-	$.get('https://cc681865.ngrok.io/product', data => {
+	$.get('/product', data => { //window.location.origin
 		if (data.success) {
 			let tableData = '';
 			data.products.forEach(product => {
-				tableData += '<tr><td>' + product.name + '</td><td>' + product.price + '</td><td>' + product.description + '</td><td>' + product.image_link + '</td><td>' + product._id + '</td>';
+				tableData += '<tr><td>'  + product._id + '</td><td>' + product.name + '</td><td>' + product.price + '</td><td>' + product.status + '</td></tr>';
 			});
 			$('#table-body').append(tableData);
 		} else {

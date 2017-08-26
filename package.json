@@ -1,36 +1,37 @@
 {
-  "name": "doughman",
-  "version": "1.0.0",
-  "description": "A bot to take orders for Doughman Foods",
-  "main": "doughman.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnotu/aidahbotdemo.git"
-  },
-  "keywords": [
-    "doughman",
-    "bot",
-    "aidah",
-    "aidahbot"
-  ],
-  "author": "John Otu <johnne01@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnotu/aidahbotdemo/issues"
-  },
-  "homepage": "https://github.com/johnotu/aidahbotdemo#readme",
-  "dependencies": {
-    "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "botbuilder": "^3.9.0",
-    "cors": "^2.8.4",
-    "express": "^4.15.4",
-    "mongoose": "^4.11.7"
-  },
-  "devDependencies": {
-    "dotenv": "^4.0.0"
-  }
+	"name": "doughman",
+	"version": "1.0.0",
+	"description": "A bot to take orders for Doughman Foods",
+	"main": "doughman.js",
+	"scripts": {
+		"test": "standard"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johnotu/aidahbotdemo.git"
+	},
+	"keywords": [
+		"doughman",
+		"bot",
+		"aidah",
+		"aidahbot"
+	],
+	"author": "John Otu <johnne01@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/johnotu/aidahbotdemo/issues"
+	},
+	"homepage": "https://github.com/johnotu/aidahbotdemo#readme",
+	"dependencies": {
+		"axios": "^0.16.2",
+		"body-parser": "^1.17.2",
+		"botbuilder": "^3.9.0",
+		"cors": "^2.8.4",
+		"express": "^4.15.4",
+		"mongoose": "^4.11.7"
+	},
+	"devDependencies": {
+		"dotenv": "^4.0.0",
+		"standard": "^10.0.3"
+	}
 }
